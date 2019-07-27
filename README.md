@@ -5,14 +5,14 @@ Collection of Algorithms and Data Structures , Increase your knowledge and under
 
 what all it contains and what all can be included in this:
 
-1. It contains a huge collection of algorithms and data structures
+1. It contains a huge collection of algorithms and data structures.
 2. Different folders for different topics which further contains different folders for based on time complexity and further on programming language. 
 3. Parent folders will consists of the list of topics that are covered inside them folder wise.
 
 ### Guidelines to be followed for contribution
 
 1. The programs should be complete.
-2. There should be proper explaination for the implementation and proper comments.
+2. There should be proper explanation for the implementation and proper comments.
 3. The code should be properly indented
 
 ### Objective 
