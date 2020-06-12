@@ -1,0 +1,5 @@
+project(mathematics)
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set (CMAKE_CXX_FLAGS "-std=c++0x -stdlib=libc++ -g3 -Wall -O0")
+add_executable(main main.cpp mathematics.cpp mathematics.h)
