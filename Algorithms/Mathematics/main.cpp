@@ -7,9 +7,13 @@
 using namespace std;
 int main()
 {
+
+
+
     int arr[] = { 10, 20, 30 };
     vector<int> vec(arr);
-    assert(LCM(vec) == 60);
-    assert(LCM(6)) == 60);
+//    assert(LCM(vec) == 60);
+//    assert(LCM(6)) == 60);
+    assert(NumberOfdigits(12345) == 5);
     return 0;
 }
