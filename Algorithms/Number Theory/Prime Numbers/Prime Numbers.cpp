@@ -1,9 +1,10 @@
 // Author: Rahul Mishra
 // Email: rahul.mishra2003@gmail.com
 
+#include<bits/stdc++.h>
+using namespace std;
 
-
-*****************************************************************************************************
+//*****************************************************************************************************
 //Prime Number algorithms
 
 //method 1
@@ -15,9 +16,9 @@ void checkprime(lld N){
         if( N % i == 0 )
             count++;
     if(count == 2)
-        cout << N << “ is a prime number.” << endl;
+        cout << N << " is a prime number." << endl;
     else
-        cout << N << “ is not a prime number.” << endl;
+        cout << N << " is not a prime number." << endl;
 }
 
 //Method 2
@@ -34,9 +35,9 @@ void checkprime(lld N) {
       }
     }
     if(count == 2)
-        cout << N << “ is a prime number.” << endl;
+        cout << N << " is a prime number." << endl;
     else
-        cout << N << “ is not a prime number.” << endl;
+        cout << N << " is not a prime number" << endl;
 }
 
 
@@ -55,9 +56,9 @@ void checkprime(lld N) {
       }
     }
     if(count == 2)
-        cout << N << “ is a prime number.” << endl;
+        cout << N << " is a prime number." << endl;
     else
-        cout << N << “ is not a prime number.” << endl;
+        cout << N << " is not a prime number." << endl;
 }
 
 
@@ -99,10 +100,11 @@ void checkprime(lld N) {
          			break;		
     }
     if(count == 2)
-        cout << N << “ is not a prime number.” << endl;
+        cout << N << " is not a prime number." << endl;
     else
-        cout << N << “ is a prime number.” << endl;
+        cout << N << " is a prime number." << endl;
 
+}
 
 //method 6
 /* prime factorisation of a number
@@ -155,6 +157,9 @@ void factorisation(lld N)
 /* Finding number of prime factors for a range of number
 
 */
+typedef long ld ; 
+typedef unsigned long long int ulld;
+int N = 1000000;
 vector<ld>diffPrime(N,0);
 vector<ld> countDiffPrime(ld N)
 {

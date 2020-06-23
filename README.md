@@ -8,6 +8,7 @@ what all it contains and what all can be included in this:
 1. It contains a huge collection of algorithms and data structures.
 2. Different folders for different topics which further contains different folders for based on time complexity and further on programming language. 
 3. Parent folders will consists of the list of topics that are covered inside them folder wise.
+4. Programs are written in GoLang, Python and C++.
 
 ### Guidelines to be followed for contribution
 
