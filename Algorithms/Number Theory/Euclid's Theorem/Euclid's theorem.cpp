@@ -3,8 +3,10 @@
 
 
 
-*****************************************************************************************************
-
+//*****************************************************************************************************
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long lld;
 
 // Euclid's theorem to find GCD
 //euclid's GCD method Recursive
@@ -12,10 +14,10 @@
 
 lld GCD(lld A, lld B)
 {
-    if(b==0)
-        return a;
+    if(B==0)
+        return A;
     else
-        return GCD(b,a%b);
+        return GCD(B,A%B);
 
 }
 
@@ -49,21 +51,22 @@ Complexity : O(log(max(A, B)))
 
 //store x, y, and d as global variables
 
-void extendedEuclid(lld a,lld  b)
+int extendedEuclid(lld a,lld  b,lld x, lld y)
 {
-if (b == 0) 
-	{
-		x = 1;
-	  	y = 0; 
-	  	d = a;
-	 	return; 
-	}
-extendedEuclid(b, a % b);
-// similar as the original gcd
-lld x1 = y;
-lld y1 = x - (a / b) * y;
-x = x1;
-y = y1;
+	int gcd;
+	if (b == 0) 
+		{
+			x = 1;
+			y = 0; 
+			gcd = a;
+			return; 
+		}
+	gcd = extendedEuclid(b, a%b,x,y);
+	lld x1 = y;
+	lld y1 = x - (a / b) * y;
+	x = x1;
+	y = y1;
+	return gcd;
 }
 
 
